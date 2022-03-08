@@ -6,9 +6,12 @@ document.addEventListener(`DOMContentLoaded`, function() {
     console.log(fadeables)
 
     for (let i = 0; i < fadeables.length; i++) {
+        
         const element = fadeables[i]
         console.log(element)
         console.log(i)
+        //element.style.opacity = 1-(i/(fadeables.length-1))
+        element.style.color = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
     }
     /*fadeables.forEach(function(item) { wtf is an HTMLCollection rip arrays
         console.log(item)
