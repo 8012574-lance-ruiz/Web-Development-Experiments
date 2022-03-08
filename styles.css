@@ -1,0 +1,10 @@
+p {
+    padding: 100px;
+    font-size: 26px;
+}
+
+#box div { 
+    margin: 50px; 
+    padding: 50px; 
+    background-color: gray; 
+}
