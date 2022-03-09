@@ -1,5 +1,16 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/assets/Ubuntu-Regular.ttf");
+}
+
 p, h1 {
-    padding: 100px;
+    padding: 40px;
     font-size: 26px;
-    transition: 3s color;
+    font-family: "Ubuntu";
+}
+
+/* Fadeable class; configure transition types, timings, and other class styling attributes here */
+.fadeable-section {
+    opacity: 0;
+    transition: 2s opacity;
 }
