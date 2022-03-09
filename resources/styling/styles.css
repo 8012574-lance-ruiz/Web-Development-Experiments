@@ -4,7 +4,7 @@
 }
 
 p, h1 {
-    padding: 40px;
+    padding: 80px;
     font-size: 26px;
     font-family: "Ubuntu";
 }
@@ -12,5 +12,5 @@ p, h1 {
 /* Fadeable class; configure transition types, timings, and other class styling attributes here */
 .fadeable-section {
     opacity: 0;
-    transition: 2s opacity;
+    transition: 1s opacity;
 }
