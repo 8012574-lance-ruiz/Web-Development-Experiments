@@ -18,13 +18,14 @@ document.addEventListener(`DOMContentLoaded`, function() {
         const randomR = Math.random()*255
         const randomG = Math.random()*255
         const randomB = Math.random()*255
-
+        
         element.style["background-color"] = `rgb(${randomR}, ${randomG}, ${randomB})`
         element.style.color = `rgb(${255-randomR}, ${255-randomG}, ${255-randomB})`
     }
 
     function updateFadeables() {
         currentScrollY = window.scrollY
+        //console.log(currentScrollY)
         
         for (let i = 0; i < fadeableElements.length; i++) {
             const element = fadeableElements[i]
@@ -43,7 +44,7 @@ document.addEventListener(`DOMContentLoaded`, function() {
     updateFadeables()
 });
 
-
+console.clear();
 
 /*
 { // Event listener; triggers only once after the page loads
