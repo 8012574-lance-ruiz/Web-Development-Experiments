@@ -13,6 +13,7 @@ document.addEventListener(`DOMContentLoaded`, function() {
     const fadeableElements = document.getElementsByClassName(`fadeable-section`)
     console.log(fadeableElements)
 
+    /*
     for (let i = 0; i < fadeableElements.length; i++) {
         const element = fadeableElements[i]
         const randomR = Math.random()*255
@@ -22,6 +23,7 @@ document.addEventListener(`DOMContentLoaded`, function() {
         element.style["background-color"] = `rgb(${randomR}, ${randomG}, ${randomB})`
         element.style.color = `rgb(${255-randomR}, ${255-randomG}, ${255-randomB})`
     }
+    */
 
     function updateFadeables() {
         currentScrollY = window.scrollY
