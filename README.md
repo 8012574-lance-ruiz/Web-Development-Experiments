@@ -1,5 +1,4 @@
 # Web-Development-Experiments
-<<<<<<< HEAD
 =======
 
 Firstly initialized on March 8, 2022 (2022.03.08).
