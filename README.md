@@ -8,7 +8,7 @@ Currently utilizes vanilla CSS and JavaScript; expecting to use three.JS and oth
 
 Firstly initialized on `March 8, 2022 (2022.03.08)`.
 
-
+<img src="https://live.staticflickr.com/65535/53056297339_9bfa7e3432_c.jpg">
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/51037255/229574309-7761124d-70a8-429a-b41c-c09a8b8a99a3.png">
 This is an experimental project, apart of an experimental repository.
 
