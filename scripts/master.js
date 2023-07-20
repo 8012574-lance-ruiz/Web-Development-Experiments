@@ -10,7 +10,7 @@
 let currentScrollY = window.scrollY;
 
 document.addEventListener(`DOMContentLoaded`, function() {
-    const fadeableElements = document.getElementsByClassName(`fadeable-section`)
+    const fadeableElements = document.getElementsByClassName(`fadeable`)
     console.log(fadeableElements)
 
     /*
