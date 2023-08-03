@@ -18,12 +18,12 @@ Currently utilizes vanilla CSS and JavaScript; expecting to use three.JS and oth
 
 Firstly initialized on `March 8, 2022 (2022.03.08)`.
 
+## 🖼 Previews
+
 <img src="https://github.com/dev-alto/Web-Development-Experiments/blob/master/ezgif.com-optimize.gif">
 This is an experimental project, apart of an experimental repository.
 
 (LE|RZ)
-<<<<<<< HEAD
-6cc2a66ecebe47d4bf1a56dce8045d90c1dbca30
-=======
-6cc2a66ecebe47d4bf1a56dce8045d90c1dbca30
+
+6cc2a66ecebe47d4bf1a56dce8045d90c1dbca30 <<<<<<< HEAD
 >>>>>>> bdc8102036360603170d22c436603ae7cd06a3c9
