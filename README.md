@@ -1,5 +1,5 @@
 # 🕸 Web Development Experiments
-A personal portfolio and blog website used to display & comemmorate my past programming experiences. 
+A (planned personal portfolio and blog) website used to display & comemmorate past programming experiences, share personal updates, test and tinker with web-based technologies, and to overall expand my programming knowledge through the mediums of both web design and web development.
 
 🔗 Currently hosted @ https://the-devalto-experiments.000webhostapp.com
 
