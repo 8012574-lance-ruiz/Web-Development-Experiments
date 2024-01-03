@@ -7,7 +7,6 @@ const backdrop = '/assets/melon.png'
 export default function Projects() {
     return (
         <>
-            <Topbar/>
 
             {/* Hero */}
             <div className="absolute w-full h-full bg-neutral-800">
@@ -16,6 +15,7 @@ export default function Projects() {
                     <h1 className="text-center text-white">Hello!</h1>
                 </div>
             </div>
+            
         </>
     )
 }
