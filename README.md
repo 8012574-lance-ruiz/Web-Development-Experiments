@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🕸 Web Development Experiments
+A planned personal portfolio and blog website used to display & comemmorate past programming experiences, share personal updates, test and tinker with web-based technologies, and to overall expand my programming knowledge through the mediums of both web design and web development.
 
-## Getting Started
+🔗 Currently hosted @ www.lanceruiz.com
 
-First, run the development server:
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/51037255/229574309-7761124d-70a8-429a-b41c-c09a8b8a99a3.png">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔭 Project Scope
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* `MAJOR` Holding intentions to register a stand-alone domain through CloudFlare + other things that will polish up the scope of the site like SSL certificates. May consider other domain registrars like Hover or Porkbun.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Start implementing the first sub-pages like the 'Projects' and 'Contact' pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Implement a blog/diary section using a from-scratch system.
 
-## Learn More
+## 📚 Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+Outdated during transition period.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+~~Currently utilizes vanilla CSS and JavaScript; expecting to use three.JS, SASS and other frameworks/libraries in the future.~~
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+~~* https://threejs.org~~
+~~* https://sass-lang.com~~
 
-## Deploy on Vercel
+## 🖼 Previews
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Outdated as of ~07/25/2023
+<img src="https://github.com/dev-alto/Web-Development-Experiments/blob/master/ezgif.com-optimize.gif">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This is an experimental project, apart of an experimental repository.
+
+(LE|RZ)
+
+Firstly initialized on `March 8, 2022 (2022.03.08)`.
+
+## internal stuff:
+6cc2a66ecebe47d4bf1a56dce8045d90c1dbca30 <<<<<<< HEAD
+>>>>>>> bdc8102036360603170d22c436603ae7cd06a3c9
