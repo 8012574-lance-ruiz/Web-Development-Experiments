@@ -19,7 +19,12 @@ const config: Config = {
                 Poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
                 Rubik: ['Rubik', ...defaultTheme.fontFamily.sans],
                 Ubuntu: ['Ubuntu', ...defaultTheme.fontFamily.sans],
-            }
+            },
+            textShadow: {
+                sm: '0 1px 2px var(--tw-shadow-color)',
+                DEFAULT: '0 4px 6px var(--tw-shadow-color)',
+                lg: '0 8px 16px var(--tw-shadow-color)',
+            },
         },
     },
     plugins: [],
