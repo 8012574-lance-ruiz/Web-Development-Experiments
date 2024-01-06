@@ -16,9 +16,9 @@ const config: Config = {
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
             fontFamily: {
-                Poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
-                Rubik: ['Rubik', ...defaultTheme.fontFamily.sans],
-                Ubuntu: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+                Poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
+                Rubik: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
+                Ubuntu: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
             },
             textShadow: {
                 sm: '0 1px 2px var(--tw-shadow-color)',
