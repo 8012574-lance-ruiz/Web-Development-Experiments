@@ -1,9 +1,7 @@
 # 🕸 Web Development Experiments
 A planned personal portfolio and blog website used to display & comemmorate past programming experiences, share personal updates, test and tinker with web-based technologies, and to overall expand my programming knowledge through the mediums of both web design and web development.
 
-🔗 Currently hosted @ https://the-devalto-experiments.000webhostapp.com - will soon be hosted at https://devalto.dev or a similar domain*
-
-\* ETA: likely in coming weeks ~ see 🔭 Project Scope below
+🔗 Currently hosted @ www.lanceruiz.com
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/51037255/229574309-7761124d-70a8-429a-b41c-c09a8b8a99a3.png">
 
@@ -16,10 +14,13 @@ A planned personal portfolio and blog website used to display & comemmorate past
 * Implement a blog/diary section using a from-scratch system.
 
 ## 📚 Technologies Used
-Currently utilizes vanilla CSS and JavaScript; expecting to use three.JS, SASS and other frameworks/libraries in the future.
 
-* https://threejs.org
-* https://sass-lang.com
+Outdated during transition period.
+
+~~Currently utilizes vanilla CSS and JavaScript; expecting to use three.JS, SASS and other frameworks/libraries in the future.~~
+
+~~* https://threejs.org~~
+~~* https://sass-lang.com~~
 
 ## 🖼 Previews
 
