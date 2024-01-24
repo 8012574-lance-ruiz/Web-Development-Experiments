@@ -6,12 +6,11 @@ import Footer from './components/Footer'
 
 import { Inter, Poppins, Ubuntu, Rubik } from 'next/font/google'
 
-
-
 // Default base font
+
 const inter = Inter({
-    subsets: ['latin'], 
-    variable: '--font-inter' 
+    subsets: ['latin'],
+    variable: '--font-inter'
 })
 
 const rubik = Rubik({
@@ -31,8 +30,6 @@ const ubuntu = Ubuntu({
     subsets: ['latin'],
     variable: '--font-ubuntu'
 })
-
-
 
 export const metadata: Metadata = {
     title: 'Lance The Ruiz',

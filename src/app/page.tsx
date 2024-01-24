@@ -75,7 +75,9 @@ export default function Home() {
                 <div className="absolute left-0 bg-gradient-to-r from-[#3b3a9127] to-transparent w-[50%] h-screen" />
 
                 <div className="z-10 w-full h-full flex flex-col sm:flex-row items-center justify-center px-[10%] py-[10%]">
+
                     {/* 3D Centerpiece Model */}
+
                     <div className="w-full h-1/2 sm:w-1/2 sm:h-full">
                         <Canvas orthographic camera={{ zoom: 40, position: [0, 0, 50] }} className="drop-shadow-[0_0_25px_rgba(0,0,0,1)]">
                             <ambientLight intensity={2} />
@@ -103,12 +105,10 @@ export default function Home() {
                             </button>
                         </ScrollLink>
                     </div>
+                    
                 </div>
 
-
-                
             </div>
-
 
 
 
