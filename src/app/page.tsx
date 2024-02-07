@@ -118,7 +118,7 @@ export default function Home() {
 
                 <Element name="about"></Element>
 
-                <div className="flex flex-col sm:flex-row sm:w-[66.6vw] sm:h-[52.5vh] mx-auto items-center justify-center gap-4">
+                <div className="flex flex-row sm:w-[1200px] h-[52.5vh] mx-auto items-center justify-center gap-4 overflow-x-auto">
 
                     <div className="flex flex-col w-[33%] h-full duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-yellow-700 to-transparent hover:outline-yellow-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-yellow-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(237,144,10,0.15)] hover:drop-shadow-[0_15px_35px_rgba(237,144,10,0.35)]">
                         <Image width={512} height={512} src={gamedev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
