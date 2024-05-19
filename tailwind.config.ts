@@ -19,6 +19,7 @@ const config: Config = {
                 Poppins: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
                 Rubik: ['var(--font-rubik)', ...defaultTheme.fontFamily.sans],
                 Ubuntu: ['var(--font-ubuntu)', ...defaultTheme.fontFamily.sans],
+                Open_Sans: ['var(--font-open_sans)', ...defaultTheme.fontFamily.sans],
             },
             textShadow: {
                 sm: '0 1px 2px var(--tw-shadow-color)',
