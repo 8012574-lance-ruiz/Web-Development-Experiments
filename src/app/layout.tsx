@@ -3,11 +3,11 @@ import './globals.css'
 
 import Topbar from './components/Topbar'
 import Footer from './components/Footer'
+import Webring from './components/Webring'
 
 import { Inter, Poppins, Ubuntu, Rubik, Open_Sans } from 'next/font/google'
 
 // Default base font
-
 const inter = Inter({
     subsets: ['latin'],
     variable: '--font-inter'
@@ -19,7 +19,7 @@ const rubik = Rubik({
     variable: '--font-rubik'
 })
 
-const poppins = Poppins({
+const poppins = Poppins({ 
     weight: ['200', '300', '400', '500', '700'],
     subsets: ['latin'],
     variable: '--font-poppins'
@@ -46,13 +46,20 @@ export default function RootLayout({
     children,
 }: {
     children: React.ReactNode
-}) {
+}) : React.ReactNode {
     return (
-        <html lang="en" className={`${inter.variable} ${poppins.variable} ${ubuntu.variable} ${rubik.variable} ${open_sans.variable}`}>
+        <html>
+            <head lang="en" className={`${inter.variable} ${poppins.variable} ${ubuntu.variable} ${rubik.variable} ${open_sans.variable}`}>
+                
+            </head>
+
             <body>
                 <Topbar />
+
                 {children}
-                <Footer />
+                {/* <Footer /> */}
+                <Webring ringName='lance' url='https://raw.githubusercontent.com/Skyline-College-Computer-Science-Club/clubwebring/master/webring.json'/>
+
             </body>
         </html>
     )

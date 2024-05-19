@@ -2,9 +2,8 @@
 
 import React, { useRef, useState } from 'react'
 import Image from 'next/image'
-import { Link as ScrollLink, Element } from 'react-scroll'
 
-import { }
+import { Link as ScrollLink, Element } from 'react-scroll'
 
 import * as THREE from 'three'
 
@@ -47,7 +46,7 @@ function VisualModel() {
     )
 }
 
-export default function Home() {
+export default function Home() : React.ReactNode {
     return (
         <>
 
@@ -118,35 +117,37 @@ export default function Home() {
             </div>
 
 
-
             {/*         About Cards         */}
 
-            <div className="flex w-full h-[140vh] items-center bg-gradient-to-b from-black via-neutral-950 to-neutral-900">
+            {/* 
+
+
+            <div className="flex w-full h-[1200px] mx-auto items-center bg-gradient-to-b from-black via-neutral-950 to-neutral-900">
 
                 <Element name="about"></Element>
 
-                <div className="flex flex-row h-[40%] mx-auto items-center justify-center gap-10">
+                <div className="flex flex-row flex-wrap mx-auto items-center justify-center gap-4 lg:gap-10">
 
-                    <div className="flex flex-col w-[33%] h-full duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-yellow-700 to-transparent hover:outline-yellow-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-yellow-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(237,144,10,0.15)] hover:drop-shadow-[0_15px_35px_rgba(237,144,10,0.35)]">
-                        <Image width={512} height={512} src={gamedev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
+                    <div className="flex flex-col w-[400px] h-[480px] duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-yellow-700 to-transparent hover:outline-yellow-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-yellow-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(237,144,10,0.15)] hover:drop-shadow-[0_15px_35px_rgba(237,144,10,0.35)]">
+                        <Image width={300} height={300} src={gamedev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
                             <h2 className="font-bold text-xl text-yellow-100 font-Poppins">Game Development</h2>
-                            <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">Nearly ten years of combined on-and-off game design and  development experience in both the Roblox platform and Unity engines.</p>
+                            <p className="h-auto text-md lg:text-lg text-center px-8 text-white font-Open_Sans">Nearly ten years of combined on-and-off game design and development experience on the Roblox, Unity, and Godot platforms and engines.</p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-[33%] h-full duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-blue-800 to-transparent hover:outline-blue-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-blue-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(70,120,250,0.15)] hover:drop-shadow-[0_15px_35px_rgba(70,120,250,0.45)]">
-                        <Image width={512} height={512} src={webdev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
+                    <div className="flex flex-col w-[400px] h-[480px] duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-blue-800 to-transparent hover:outline-blue-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-blue-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(70,120,250,0.15)] hover:drop-shadow-[0_15px_35px_rgba(70,120,250,0.45)]">
+                        <Image width={300} height={300} src={webdev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
                             <h2 className="font-bold text-xl text-blue-200 font-Poppins">Web Development</h2>
                             <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">This is a sample placeholder paragraph with sample placeholder text.</p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-[33%] h-full duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-green-700 to-transparent hover:outline-green-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-green-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(50,255,100,0.15)] hover:drop-shadow-[0_15px_35px_rgba(50,255,100,0.35)]">
-                        <Image width={512} height={512} src={gendev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
+                    <div className="flex flex-col w-[400px] h-[480px] duration-300 active:scale-95 items-center rounded-2xl bg-gradient-to-b from-green-700 to-transparent hover:outline-green-800 outline-double outline-0 hover:outline-8 active:outline-4 border-4 border-green-900 hover:scale-[98%] drop-shadow-[0_15px_25px_rgba(50,255,100,0.15)] hover:drop-shadow-[0_15px_35px_rgba(50,255,100,0.35)]">
+                        <Image width={300} height={300} src={gendev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
-                            <h2 className="font-bold text-xl text-green-300 font-Poppins">Experiments</h2>
+                            <h2 className="font-bold text-xl text-green-300 font-Poppins">Projects & Experiments</h2>
                             <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">This is a sample placeholder paragraph with sample placeholder text.</p>
                         </div>
                     </div>
@@ -162,7 +163,7 @@ export default function Home() {
             </div>
             <div className="w-full h-screen bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
                 Contact
-            </div>
+            </div> */}
 
         </>
     )
