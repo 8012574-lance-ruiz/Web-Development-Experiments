@@ -52,13 +52,13 @@ export default function Home() : React.ReactNode {
 
             {/*              Hero              */}
 
-            <div className="w-full h-screen bg-black">
+            <div className="w-full h-screen">
 
                 {/* Backdrop Image */}
-                <Image width={3840} height={2160} src={backdrop} alt="" role="presentation" className="absolute opacity-35 w-full h-full object-cover" />
+                <Image width={3840} height={2160} src={backdrop} alt="" className="absolute opacity-35 w-full h-full object-cover" />
 
                 {/* Hero Overlay */}
-                <Image width={1920} height={1080} src={heroOverlay} className="absolute opacity-[7%] top-0 w-full h-full" alt="overlay"/>
+                <Image width={1920} height={1080} src={heroOverlay} className="absolute opacity-[10%] top-0 w-full h-full" alt="overlay"/>
 
 
 
@@ -69,6 +69,7 @@ export default function Home() : React.ReactNode {
                 
                 {/* bottom */}
                 <div className="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[75%]" />
+                <div className="z-10 absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full h-[35%]" />
 
                 {/* right */}
                 <div className="absolute right-0 bg-gradient-to-l from-[#916b3a28] to-transparent w-[75%] h-full" />
@@ -85,7 +86,7 @@ export default function Home() : React.ReactNode {
                     {/* 3D Centerpiece Model */}
 
                     <div className="w-full h-1/2 sm:w-1/2 sm:h-full">
-                        <Canvas orthographic camera={{ zoom: 40, position: [0, 0, 50] }} className="drop-shadow-[0_0_25px_rgba(0,0,0,1)]">
+                        <Canvas orthographic camera={{ zoom: 40, position: [0, 0, 50] }} className="drop-shadow-[0_0_50px_rgba(0,0,0,1)]">
                             <ambientLight intensity={2} />
                             <hemisphereLight color={"#FFEBC6"} groundColor={"#FFF"} intensity={15} />
                             <directionalLight intensity={25} position={[20, 0, 0]} />
@@ -96,7 +97,7 @@ export default function Home() : React.ReactNode {
                     {/* Centerpiece Text */}
                     <div className="w-full h-1/2 sm:w-1/2 sm:h-full flex flex-col items-center justify-center text-white">
 
-                        <h1 className="text-4xl sm:text-5xl text-center duration-300 text-shadow-xl shadow-black font-Poppins font-medium drop-shadow-[0_0_25px_rgba(255,175,125,0.7)] hover:drop-shadow-[0_0_25px_rgba(255,175,125,1)]">Hello, I am Lance Ruiz.</h1>
+                        <h1 className="text-4xl sm:text-5xl text-center duration-300 text-shadow-xl shadow-black font-Poppins font-medium drop-shadow-[0_0_25px_rgba(255,175,125,0.7)] hover:drop-shadow-[0_0_50px_rgba(255,175,125,1)]">Hello, I am Lance Ruiz.</h1>
 
                         <div className="text-center text-shadow shadow-black text-xl sm:text-2xl pt-4 w-full drop-shadow-[0_0_25px_rgba(255,155,115,0.8)]">
                             <p className="font-Ubuntu">Freelance indie game developer, software engineer, FLOSS 💝.</p>
@@ -116,13 +117,70 @@ export default function Home() : React.ReactNode {
 
             </div>
 
+            <div className="bg-black h-60"></div>
+
+            <div className="relative">
+                
+                {/* top     */}
+                <div className='z-0 bg-gradient-to-b from-black to-transparent absolute top-0 w-full h-[20%]'></div>
+                {/* bottom  */}
+                <div className='z-0 bg-gradient-to-t from-black to-transparent absolute bottom-0 w-full h-[20%]'></div>
+                {/* left    */}
+                <div className='z-0 bg-gradient-to-r from-[#00000075] to-transparent absolute top-0 left-0 w-[50%] h-full'></div>
+                {/* right   */}
+                <div className='z-0 bg-gradient-to-l from-[#00000075] to-transparent absolute top-0 right-0 w-[50%] h-full'></div>
+
+                <div className="flex flex-col items-center justify-center gap-5 py-8 bg-[#100418] outline outline-[1px] outline-neutral-500">
+                    <p className="z-10 text-3xl font-Ubuntu font-bold text-white">My Preferred Tech Stack</p>
+                    <div className="z-10 flex flex-row flex-wrap justify-center gap-4">
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#22578f] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#3c87d8] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/typescript.png"} alt="" className="h-[55%] aspect-square object-contain w-auto rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Typescript</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#3d320e] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#645d1e] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/python.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Python</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#10151f] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#17414d] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/tailwind.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Tailwind</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#4d3019] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#7e4211] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/html.webp"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">HTML</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#3a552d] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#4d9238] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/nodejs.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">NodeJS</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#351f0c] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#72360f] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/ubuntu.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Ubuntu</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#123138] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#0b5a6e] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/luau.png"} alt="" className="h-[55%] w-auto raspect-square object-contain marker:ounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Lua+u</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#351f0c] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#72360f] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/blender.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Blender</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#232e44] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#1d5796] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/cpp.png"} alt=""className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">C++</p>
+                        </div>
+                        <div className="flex flex-col items-center w-32 h-[160px] bg-[#0d4641] rounded-xl justify-center gap-2 outline outline-[2px] outline-[#0f7568] hover:scale-105 transition-all">
+                            <Image width={128} height={128} src={"/assets/home/techstack/popos.png"} alt="" className="h-[55%] w-auto aspect-square object-contain rounded-xl mt-2" />
+                            <p className="text-lg font-semibold font-Open_Sans">Pop!_OS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             {/*         About Cards         */}
 
-            {/* 
-
-
-            <div className="flex w-full h-[1200px] mx-auto items-center bg-gradient-to-b from-black via-neutral-950 to-neutral-900">
+            <div className="flex w-full py-40 mx-auto items-center bg-gradient-to-b from-black via-neutral-950 to-neutral-900">
 
                 <Element name="about"></Element>
 
@@ -132,7 +190,7 @@ export default function Home() : React.ReactNode {
                         <Image width={300} height={300} src={gamedev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
                             <h2 className="font-bold text-xl text-yellow-100 font-Poppins">Game Development</h2>
-                            <p className="h-auto text-md lg:text-lg text-center px-8 text-white font-Open_Sans">Nearly ten years of combined on-and-off game design and development experience on the Roblox, Unity, and Godot platforms and engines.</p>
+                            <p className="h-auto text-md lg:text-lg text-center px-8 text-white font-Open_Sans">Inheriting ten years of combined on-and-off game design and software development experience on the Roblox, Unity, and Godot platforms and engines.</p>
                         </div>
                     </div>
 
@@ -140,7 +198,7 @@ export default function Home() : React.ReactNode {
                         <Image width={300} height={300} src={webdev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
                             <h2 className="font-bold text-xl text-blue-200 font-Poppins">Web Development</h2>
-                            <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">This is a sample placeholder paragraph with sample placeholder text.</p>
+                            <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">Active developer of many web applications and sites, including this one! Implemented full tech stacks for front and back-end systems using NextJS, and Tailwind CSS.</p>
                         </div>
                     </div>
 
@@ -148,17 +206,14 @@ export default function Home() : React.ReactNode {
                         <Image width={300} height={300} src={gendev} alt="" className="h-[50%] mt-[5%] w-auto aspect-square" />
                         <div className="flex flex-col w-full h-[45%] pt-[5%] items-center gap-1">
                             <h2 className="font-bold text-xl text-green-300 font-Poppins">Projects & Experiments</h2>
-                            <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">This is a sample placeholder paragraph with sample placeholder text.</p>
+                            <p className="h-auto text-lg text-center px-8 text-white font-Open_Sans">Current self-developing pioneer of new project scopes, including electronics, homelab network managment, internet of things, and UI/UX design.</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-
-
-
-            <div className="w-full h-screen bg-gradient-to-b from-neutral-900 via-violet-950 to-neutral-900">
+            {/* <div className="w-full h-screen bg-gradient-to-b from-neutral-900 via-violet-950 to-neutral-900">
                 Blog
             </div>
             <div className="w-full h-screen bg-gradient-to-b from-neutral-900 via-neutral-800 to-neutral-900">
