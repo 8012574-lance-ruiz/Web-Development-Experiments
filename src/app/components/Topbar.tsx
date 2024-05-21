@@ -10,7 +10,7 @@ const asset_emblem = '/assets/emblem.png'
 
 export default function Topbar() {
     return (
-        <div className="z-50 fixed w-screen h-[60px] bg-neutral-800 dark:bg-neutral-900 border-b-[1px] border-neutral-600 dark:border-neutral-800">
+        <div className="z-50 fixed w-screen h-[60px] bg-neutral-800 dark:bg-neutral-900 dark:bg-opacity-40 border-b-[1px] border-neutral-600 dark:border-neutral-800">
             <div className="flex h-full px-4 justify-between items-center text-lg font-semibold overflow-hidden">
 
                 <div className="flex gap-3 items-center">
@@ -43,7 +43,7 @@ export default function Topbar() {
                     <Link href="">
                         <button className="flex group bg-neutral-700 dark:bg-neutral-900 bg-opacity-80 border-[1px] border-neutral-500 dark:border-neutral-800 rounded-md gap-1 py-2 px-4 active:scale-95 hover:bg-yellow-900 hover:outline-4 hover:text-white active:outline-2 hover:outline-double outline-white hover:outline-yellow-700 active:outline-neutral-200 duration-200 active:duration-200">
                             <RiContactsBook2Line className="my-auto group-hover:text-white" />
-                            Contact
+                            Let's Connect
                         </button>
                     </Link>
                 </div>

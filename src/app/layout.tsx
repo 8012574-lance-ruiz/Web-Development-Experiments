@@ -49,18 +49,17 @@ export default function RootLayout({
 }) : React.ReactNode {
     return (
         <html>
-            <head lang="en" className={`${inter.variable} ${poppins.variable} ${ubuntu.variable} ${rubik.variable} ${open_sans.variable}`}>
-                
+            <head lang="en" >
+
             </head>
 
-            <body>
+            <body className={`${inter.variable} ${poppins.variable} ${ubuntu.variable} ${rubik.variable} ${open_sans.variable}`}>
                 <Topbar />
-
                 {children}
-                {/* <Footer /> */}
+                <Footer />
                 <Webring ringName='lance' url='https://raw.githubusercontent.com/Skyline-College-Computer-Science-Club/clubwebring/master/webring.json'/>
-
             </body>
+
         </html>
     )
 }
