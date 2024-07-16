@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { RiContactsBook2Line } from 'react-icons/ri'
 import { GoQuestion } from 'react-icons/go'
 import { FiTool } from 'react-icons/fi'
 import { GrContact } from 'react-icons/gr'
-import { RiContactsBook2Line } from 'react-icons/ri'
 
 const asset_emblem = '/assets/emblem.png'
 
